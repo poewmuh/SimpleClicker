@@ -17,7 +17,7 @@ namespace SimpleClicker.Entety
 
         private void Awake()
         {
-            _currEnemyLevel = 0;
+            _currEnemyLevel = 1;
             curLevelText.text = _currEnemyLevel.ToString();
             ActivateEnemy();
             EventHandler.enemyDead.AddListener(SpawnNewEnemy);
